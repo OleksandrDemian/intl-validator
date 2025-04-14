@@ -15,10 +15,7 @@ This script analyzes your React/Next.js codebase to ensure all translation keys 
 
 ```bash
 # Install locally in your project
-npm install --save-dev /path/to/intl-validator
-
-# Or install globally
-npm install -g /path/to/intl-validator
+npm install --save-dev @odemian/intl-validator
 ```
 
 ## Configuration
@@ -28,12 +25,12 @@ Create a `.intl-validator.json` file in the root of your project with the follow
 ```json
 {
   "projectRoot": "/absolute/path/to/your/project",
-  "exampleTranslationFile": "/absolute/path/to/your/translation.json"
+  "translationFile": "/absolute/path/to/your/translation.json"
 }
 ```
 
-- `projectRoot`: The absolute path to the root directory of your project containing .tsx files
-- `exampleTranslationFile`: The absolute path to a translation file (JSON) that has all the required translations
+- `projectRoot`: Path to the root directory of your project containing .tsx files
+- `translationFile`: Path to a translation file (JSON) that has all the required translations
 
 ## Usage
 

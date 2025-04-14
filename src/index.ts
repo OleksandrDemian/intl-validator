@@ -14,7 +14,7 @@ async function main() {
     // 1. Read the configuration file
     const config = await readConfig();
     console.log(`📁 Project root: ${config.projectRoot}`);
-    console.log(`🌐 Translation file: ${config.exampleTranslationFile}`);
+    console.log(`🌐 Translation file: ${config.translationFile}`);
     
     // 2. Find all .tsx files in the project
     const files = await findTsxFiles(config.projectRoot);
@@ -24,7 +24,7 @@ async function main() {
     
     // 4. Initialize the translation validator
     const validator = new TranslationValidator();
-    await validator.loadTranslationFile(config.exampleTranslationFile);
+    await validator.loadTranslationFile(config.translationFile);
     
     // 5. Process all files and collect translation keys
     console.log('🔍 Analyzing files for translation keys...');

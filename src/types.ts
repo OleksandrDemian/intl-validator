@@ -1,6 +1,6 @@
 export interface IntlValidatorConfig {
   projectRoot: string;
-  exampleTranslationFile: string;
+  translationFile: string;
 }
 
 export interface TranslationMap {

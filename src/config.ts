@@ -22,13 +22,13 @@ export async function readConfig(configPath: string = '.intl-validator.json'): P
       throw new Error('Config file missing required "projectRoot" property');
     }
     
-    if (!configData.exampleTranslationFile) {
-      throw new Error('Config file missing required "exampleTranslationFile" property');
+    if (!configData.translationFile) {
+      throw new Error('Config file missing required "translationFile" property');
     }
     
     return {
       projectRoot: configData.projectRoot,
-      exampleTranslationFile: configData.exampleTranslationFile
+      translationFile: configData.translationFile
     };
   } catch (error) {
     if (error instanceof Error) {
