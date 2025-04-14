@@ -1,6 +1,6 @@
 {
   "name": "@odemian/intl-validator",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A tool for validating internationalization (i18n) translation keys in Next.js projects using next-intl",
   "main": "dist/index.js",
   "bin": {
@@ -34,5 +34,10 @@
   "repository": {
     "url": "https://github.com/OleksandrDemian/intl-validator"
   },
-  "homepage": "https://github.com/OleksandrDemian/intl-validator"
+  "homepage": "https://github.com/OleksandrDemian/intl-validator",
+  "files": [
+    "dist/",
+    "README.md",
+    "LICENSE"
+  ]
 }
