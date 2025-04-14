@@ -1,0 +1,19 @@
+{
+  "status": {
+    "in_review": "In review",
+    "onboarded": "Onboarded",
+    "declined": "Declined",
+    "in_progress": "In progress"
+  },
+  "buttons": {
+    "submit": "Submit",
+    "cancel": "Cancel"
+  },
+  "components": {
+    "fileUploadZone": {
+      "title": "Upload files",
+      "description": "Drag and drop files here",
+      "button": "Browse files"
+    }
+  }
+}
